@@ -1,4 +1,4 @@
-# Dataset loaded for CellTyper
+# Dataset loaded for GeneTriever
 
 You should check the file name (They can be changed. If so, you should change the file path name in main.py)
 
