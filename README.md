@@ -78,7 +78,7 @@ pip install -r requirements.txt
 </code>
 </pre>
 * Download the required [data](#data) and insert the file path into <code>main.py</code>
-* Run <code>main.py</code> (Genes input should be able to be split by ", ")
+* Run <code>main.py</code> (Genes input should be able to be split by ", "): species(human, mouse, arabidopsis)
 <pre>
 <code>
 python main.py --genes "gene1, gene2, gene3" --species "human"
