@@ -45,7 +45,7 @@
 * STRING
 
 ## Data
-You should check the file names and download them. Insert them into main.py
+You should check the file names and download them. Insert them into <code>main.py</code>
 
 * Cell_marker_Seq.xlsx (http://www.bio-bigdata.center/CellMarker_download.html)
 * PanglaoDB_markers_27_Mar_2020.tsv (https://panglaodb.se/markers.html?cell_type=%27choose%27)
