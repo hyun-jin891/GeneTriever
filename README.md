@@ -24,7 +24,7 @@
 ## Introduction
 <p align="center">
   <a href="https://github.com/hyun-jin891/GeneTriever/tree/main">
-    <img alt="Target Species" title="Target Species" src="https://i.imgur.com/uu8Kq4J.png" width="450">
+    <img alt="Target Species" title="Target Species" src="https://i.imgur.com/N7329gV.png" width="450">
   </a>
 </p>
 
