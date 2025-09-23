@@ -58,12 +58,13 @@ You should check the file names and download them. Insert them into main.py
 * arabidopsis_thaliana.marker_fd.csv (https://biobigdata.nju.edu.cn/scplantdb/marker)
 
 ## How to use
-* You should get an OpenAI API key first and make .env file.
+* You should get an OpenAI API key first and make <code>.env</code>.
 <pre>
 <code>
 OPENAI_API_KEY=
 </code>
 </pre>
+* git clone
 * Install the required packages
 <pre>
 <code>
@@ -71,9 +72,12 @@ pip install -r requirements.txt
 </code>
 </pre>
 * Download the required [data](#data) and insert the file path into <code>main.py</code>
-* Run 
-
-
+* Run <code>main.py</code> (Genes input should be able to be split by ", ")
+<pre>
+<code>
+python main.py --genes "gene1, gene2, gene3" --species "human"
+</code>
+</pre>
 
 
 ## Application
