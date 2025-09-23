@@ -59,16 +59,18 @@ You should check the file names and download them. Insert them into main.py
 
 ## How to use
 * You should get an OpenAI API key first and make .env file.
+<pre>
 <code>
 OPENAI_API_KEY=
 </code>
+</pre>
 * Install the required packages
 <pre>
 <code>
 pip install -r requirements.txt
 </code>
 </pre>
-* 
+* Download the required [data](#data)
 
 
 
