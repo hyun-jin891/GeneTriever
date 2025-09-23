@@ -62,7 +62,7 @@ You should check the file names and download them. Insert them into main.py
 
 
 ## Application
-* It is used to design **CellTyper**[https://github.com/SBBlaboratory/CellTyper], which is an LLM-based cell annotation tool.
+* It is used to design [CellTyper](https://github.com/SBBlaboratory/CellTyper), which is an LLM-based cell annotation tool.
 
 
 
