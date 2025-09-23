@@ -28,6 +28,14 @@
   </a>
 </p>
 
+* It helps you to get information about specific gene of **human, mouse and arabidopsis**
+* Gene Information
+  * Gene Description
+  * Gene Function
+  * Cell Type related to Gene
+  * Pathway
+  * Subcellular Location
+  * Protein-Protein Interaction
 
 
 **Available for both iOS and Android.**
