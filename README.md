@@ -60,7 +60,7 @@ You should check the file names and download them. Insert them into main.py
 ## How to use
 * You should get an OpenAI API key first and make .env file.
 
-'''
+'''python
 #.env
 
 OPENAI_API_KEY=
