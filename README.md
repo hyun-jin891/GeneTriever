@@ -30,7 +30,7 @@
 * Gene Information
   * Gene Description
   * Gene Function
-  * Cell Type related to Gene
+  * Cell related to Gene
   * Pathway
   * Subcellular Location
   * Protein-Protein Interaction
