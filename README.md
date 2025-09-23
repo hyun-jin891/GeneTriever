@@ -58,7 +58,15 @@ You should check the file names and download them. Insert them into main.py
 * arabidopsis_thaliana.marker_fd.csv (https://biobigdata.nju.edu.cn/scplantdb/marker)
 
 ## How to use
+* You should get an OpenAI API key first and make .env file.
 
+'''
+#.env
+
+OPENAI_API_KEY=
+'''
+
+* 
 
 
 ## Application
