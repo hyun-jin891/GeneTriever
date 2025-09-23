@@ -12,6 +12,7 @@
 
 - [Introduction](#introduction)
 - [Pipeline](#pipeline)
+- [API](#api)
 - [Data](#data)
 - [How to use](#how-to-use)
 - [Application](#application)
