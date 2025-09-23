@@ -61,8 +61,6 @@ You should check the file names and download them. Insert them into main.py
 * You should get an OpenAI API key first and make .env file.
 <pre>
 <code>
-.env
-
 OPENAI_API_KEY=
 </code>
 </pre>
