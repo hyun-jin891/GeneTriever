@@ -65,6 +65,11 @@ OPENAI_API_KEY=
 </code>
 </pre>
 * git clone
+<pre>
+<code>
+git clone https://github.com/hyun-jin891/GeneTriever.git
+</code>
+</pre>
 * Install the required packages
 <pre>
 <code>
