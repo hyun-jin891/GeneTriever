@@ -56,52 +56,19 @@ def main():
   args = parse_args()
   
   genes = args.genes.split(", ")
-  
-  if args.species == "human":
-    df = pd.read_csv("human_geneDB.csv")
-  elif args.species == "mouse":
-    df = pd.read_csv("mouse_geneDB.csv")
-  elif args.species == "arabidopsis":
-    df = pd.read_csv("arabidopsis_geneDB.csv")
-    
-  flag = False
+
   res = ""
   
   for gene in genes:
-    if gene in df["Gene"].values:
-      gene_desc_summary_context = df.loc[df["Gene"]==gene]["Description"].item()
-      gene_func_summary_context = df.loc[df["Gene"]==gene]["Function"].item()
-      gene_cell_summary_context = df.loc[df["Gene"]==gene]["Related cell type"].item()
-      gene_pathway_context = df.loc[df["Gene"]==gene]["Pathway"].item()
-      gene_protein_loc_context = df.loc[df["Gene"]==gene]["Protein location"].item()
-      ppi_context = df.loc[df["Gene"]==gene]["PP interaction"].item()
-      flag = True
-    else:
-      graph = construct_marker_graph(gene, args.species, ont, db1, db2, db3, db7, db8)
-      gene_desc_summary_context, genes_ids = scene_gene_desc_summary(gene, args.species, db5)
-      gene_func_summary_context = scene_gene_function(gene, args.species, genes_ids, db5)
-      gene_cell_summary_context = scene_cell_relatedTo_gene(graph, gene, args.species, genes_ids, db5)
-      gene_pathway_context = scene_pathway(gene, genes_ids, db5, args.species)
-      gene_protein_loc_context = scene_protein_location(gene, genes_ids, args.species)
-      ppi_context = p_p_interaction_info(gene, args.species, db6)
+    graph = construct_marker_graph(gene, args.species, ont, db1, db2, db3, db7, db8)
+    gene_desc_summary_context, genes_ids = scene_gene_desc_summary(gene, args.species, db5)
+    gene_func_summary_context = scene_gene_function(gene, args.species, genes_ids, db5)
+    gene_cell_summary_context = scene_cell_relatedTo_gene(graph, gene, args.species, genes_ids, db5)
+    gene_pathway_context = scene_pathway(gene, genes_ids, db5, args.species)
+    gene_protein_loc_context = scene_protein_location(gene, genes_ids, args.species)
+    ppi_context = p_p_interaction_info(gene, args.species, db6)
     
     total_context = gene_desc_summary_context + "\n" + gene_func_summary_context  + "\n" + gene_cell_summary_context + "\n" + gene_pathway_context + "\n" + gene_protein_loc_context + "\n" + ppi_context + "\n"
-    
-    if flag:
-      pass
-    else:
-      df_extra = pd.DataFrame({"Gene":[gene], "Description":[gene_desc_summary_context], "Function":[gene_func_summary_context], "Related cell type":[gene_cell_summary_context], "Pathway":[gene_pathway_context], "Protein location":[gene_protein_loc_context], "PP interaction":ppi_context})
-    
-      df = pd.concat([df, df_extra], ignore_index=True)
-    
-    if args.species == "human":
-      df.to_csv("human_geneDB.csv", index=False)
-    elif args.species == "mouse":
-      df.to_csv("mouse_geneDB.csv", index=False)
-    elif args.species == "arabidopsis":
-      df.to_csv("arabidopsis_geneDB.csv", index=False)
-    
-    flag = False
     
     res += total_context + "\n\n"
     
