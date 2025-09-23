@@ -83,7 +83,7 @@ pip install -r requirements.txt
 python main.py --genes "gene1, gene2, gene3" --species "human"
 </code>
 </pre>
-
+* Check the result file <code>GeneRetriever_result.txt</code>
 
 ## Application
 * It is used to design [CellTyper](https://github.com/SBBlaboratory/CellTyper), which is an LLM-based cell annotation tool.
