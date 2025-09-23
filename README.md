@@ -70,7 +70,7 @@ OPENAI_API_KEY=
 pip install -r requirements.txt
 </code>
 </pre>
-* Download the required [data](#data) and insert the file path into 'main.py'
+* Download the required [data](#data) and insert the file path into <code>main.py</code>
 * Run 
 
 
