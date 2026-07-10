@@ -1,7 +1,7 @@
 <h1 align="center"> GeneTriever </h1> <br>
 <p align="center">
   <a href="https://github.com/hyun-jin891/GeneTriever/tree/main">
-    <img alt="GeneTriever" title="GeneTriever" src="https://imgur.com/a/0qyF9WS" width="450">
+    <img alt="GeneTriever" title="GeneTriever" src="https://ibb.co/XZVWvNmH" width="450">
   </a>
 </p>
 
