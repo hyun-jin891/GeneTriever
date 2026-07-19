@@ -26,7 +26,7 @@
   </a>
 </p>
 
-* It helps you to get information about genes of **Human, Mouse, and Arabidopsis**
+* It helps you to get information about genes of **Human, Mouse, and Arabidopsis** for version 1
 * Gene Information
   * Gene Description
   * Gene Function
